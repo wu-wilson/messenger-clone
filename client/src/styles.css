@@ -1,0 +1,105 @@
+/*------------------------------APP------------------------------*/
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------------------------ACCOUNT PAGES------------------------------*/
+.si-container,
+.na-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat-icon {
+  width: 60px;
+  height: 60px;
+  color: #c976de;
+}
+
+.si-title,
+.na-title {
+  font-size: 2.8rem;
+  font-family: Mukta;
+  font-weight: 300;
+}
+
+.intro {
+  font-size: 1.2rem;
+  font-family: Mukta;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.si-form,
+.na-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.si-input,
+.na-input {
+  display: flex;
+  height: 30px;
+  width: 250px;
+  align-items: center;
+  font-size: 0.85rem;
+  font-family: Mukta;
+  font-weight: 300;
+  padding: 3px 0px 3px 10px;
+}
+
+.si-password,
+.na-password {
+  margin-top: 15px;
+}
+
+.submit {
+  width: 90px;
+  height: 43px;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-family: Mukta;
+  color: white;
+  background-color: #c976de;
+  margin-top: 15px;
+  transition: ease background-color 150ms;
+}
+
+.na {
+  width: 150px;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: #a640c0;
+}
+
+.subtext {
+  color: grey;
+  font-size: 1rem;
+  font-family: Mukta;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.here {
+  color: #c976de;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: ease color 150ms;
+}
+
+.here:hover {
+  cursor: pointer;
+  color: #a640c0;
+}
