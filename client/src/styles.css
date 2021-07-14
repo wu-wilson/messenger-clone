@@ -103,3 +103,27 @@
   cursor: pointer;
   color: #a640c0;
 }
+
+.msg {
+  display: none;
+  font-family: Mukta;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.show {
+  display: flex;
+}
+
+.here-msg {
+  color: #54cc49;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: ease color 150ms;
+}
+
+.here-msg:hover {
+  cursor: pointer;
+  color: #41853b;
+}

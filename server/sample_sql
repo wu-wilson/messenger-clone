@@ -1,0 +1,11 @@
+CREATE DATABASE your_database_name;
+USE your_databse_name;
+
+CREATE TABLE users (
+	username varchar(255),
+    pass varchar(255),
+    PRIMARY KEY(username)
+);
+
+SELECT * FROM users;
+DROP TABLE users;

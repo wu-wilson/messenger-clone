@@ -41,7 +41,30 @@ database.connect((err) => {
 });
 
 // HTTP GET requests
+app.get(`/check_usernames/:username`, (req: Request, res: Response) => {
+  const CHECK_USERNAMES_QUERY = `SELECT COUNT(*) as count FROM users WHERE username = ?`;
+  database.query(
+    CHECK_USERNAMES_QUERY,
+    [req.params.username],
+    (err, result) => {
+      if (err) {
+        return res.send(err);
+      } else {
+        return res.send(result);
+      }
+    }
+  );
+});
+
 // HTTP POST requests
+app.post("/create_account", (req: Request, res: Response) => {
+  const CREATE_ACCOUNT_QUERY = `INSERT INTO users (username, pass) VALUES ("${req.body.username}", "${req.body.password}")`;
+  database.query(CREATE_ACCOUNT_QUERY, (err) => {
+    if (err) {
+      return res.send(err);
+    }
+  });
+});
 // HTTP PUT requests
 // HTTP DELETE requests
 
